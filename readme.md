@@ -1,6 +1,6 @@
 # Twitch-bot
 
-### This bot is for the drop game on the [Coding Garden] Twitch channel. It will send a message (the drop command) in the chat after a set interval.
+### This bot is for the drop game on the [Coding Garden](https://www.twitch.tv/codinggarden) Twitch channel. It will send a message (the drop command) in the chat after a set interval.
 
 # To-Do
 
