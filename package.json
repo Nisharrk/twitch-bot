@@ -1,0 +1,14 @@
+{
+  "name": "twitch-bot",
+  "version": "1.0.0",
+  "description": "A twitch bot for the drop game on the coding garden twitch channel chat",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "nisharrk",
+  "license": "ISC",
+  "dependencies": {
+    "tmi.js": "^1.8.5"
+  }
+}
