@@ -8,12 +8,15 @@ const onConnectedHandler = () => {
   sendMessage();
 };
 
-function sendMessage() {
-  client.say("#codinggarden", "!drop codingHeart");
+const emotes = ["me", "codingHeart". "codingSeedling", "codingD", "codingTrolled", "HypeCool"];
+
+const sendMessage = () => {
+  const emote = emotes[Math.floor(Math.random() * emotes.length)];
+  client.say("#codinggarden", `!drop ${emote}`);
   console.log("sent");
   setTimeout(sendMessage, 60000);
-}
-
-client.on("connected", onConnectedHandler);
+};
 
 client.connect();
+
+client.on("connected", onConnectedHandler);
