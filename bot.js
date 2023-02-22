@@ -8,7 +8,14 @@ const onConnectedHandler = () => {
   sendMessage();
 };
 
-const emotes = ["me", "codingHeart". "codingSeedling", "codingD", "codingTrolled", "HypeCool"];
+const emotes = [
+  "me",
+  "codingHeart",
+  "codingSeedling",
+  "codingD",
+  "codingTrolled",
+  "HypeCool",
+];
 
 const sendMessage = () => {
   const emote = emotes[Math.floor(Math.random() * emotes.length)];
