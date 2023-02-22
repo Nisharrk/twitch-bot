@@ -3,7 +3,7 @@
 module.exports = {
   identity: {
     username: "<BOT_USERNAME>",
-    password: "<OAUTH_TOKEN>",
+    password: "oauth:<OAUTH_TOKEN>",
   },
   channels: ["<CHANNEL_NAME>"],
 };

@@ -6,5 +6,6 @@
 
 - [x] Read Twitch API docs
 - [x] Setup the prerequisites
-- [ ] Write the code
+- [x] Test connection
+- [ ] Write logic
 - [ ] Test
