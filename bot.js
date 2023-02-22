@@ -21,7 +21,7 @@ const sendMessage = () => {
   const emote = emotes[Math.floor(Math.random() * emotes.length)];
   client.say("#codinggarden", `!drop ${emote}`);
   console.log("sent");
-  setTimeout(sendMessage, 60000);
+  setTimeout(sendMessage, 300000);
 };
 
 client.connect();
