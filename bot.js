@@ -3,14 +3,17 @@ const config = require("./config.js");
 
 const client = new tmi.client(config);
 
-try {
-  client.connect();
-} catch (err) {
-  console.error(err);
+const onConnectedHandler = () => {
+  console.log(`Connected`);
+  sendMessage();
+};
+
+function sendMessage() {
+  client.say("#codinggarden", "!drop codingHeart");
+  console.log("sent");
+  setTimeout(sendMessage, 60000);
 }
 
 client.on("connected", onConnectedHandler);
 
-function onConnectedHandler(addr, port) {
-  console.log(`Bot Connected at ${addr}:${port} `);
-}
+client.connect();

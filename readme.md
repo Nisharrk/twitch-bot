@@ -7,5 +7,6 @@
 - [x] Read Twitch API docs
 - [x] Setup the prerequisites
 - [x] Test connection
-- [ ] Write logic
-- [ ] Test
+- [x] Write logic
+- [x] Test
+- [ ] Test during [Coding Garden](https://www.twitch.tv/codinggarden) live stream
