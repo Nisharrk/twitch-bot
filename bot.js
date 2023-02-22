@@ -12,5 +12,5 @@ try {
 client.on("connected", onConnectedHandler);
 
 function onConnectedHandler(addr, port) {
-  console.log(`Bot Connected`);
+  console.log(`Bot Connected at ${addr}:${port} `);
 }
