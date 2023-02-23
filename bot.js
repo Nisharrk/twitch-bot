@@ -3,26 +3,19 @@ const config = require("./config.js");
 
 const client = new tmi.client(config);
 
-const channelName = "#codinggarden";
+const channelName = "#<Channel_Name>";
 
 const onConnectedHandler = () => {
   console.log(`Connected`);
   sendMessage();
 };
 
-const emotes = [
-  "me",
-  "codingHeart",
-  "codingSeedling",
-  "codingD",
-  "codingTrolled",
-  "HypeCool",
-];
+const messages = ["message 1", "message 2", "message 3"];
 
 const sendMessage = () => {
-  const emote = emotes[Math.floor(Math.random() * emotes.length)];
-  client.say(channelName, `!drop ${emote}`);
-  console.log("sent");
+  const message = messages[Math.floor(Math.random() * messages.length)];
+  client.say(channelName, message);
+  console.log(`Sent - ${message}`);
   setTimeout(sendMessage, 300000);
 };
 
