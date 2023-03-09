@@ -3,10 +3,11 @@
 To run this bot run the following in the root directory of this project:
 
 ```
+npm install
 npm start
 ```
 
-When using this bot, write the twitch channel name in the channelName constant.
+When using this bot, write the twitch channel name in the **_channelName_** constant.
 
 # To-Do
 
